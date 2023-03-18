@@ -1,0 +1,258 @@
+@font-face {
+    font-family: PPAgrandir-Regular ;
+    src: url(font/PPAgrandir-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-image: url(favicon-and-logo/ShoeRoomBackground2.png);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navlist {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    font-weight: 600;
+}
+
+.navlist ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    word-spacing: 10%;
+    font-size: 1.2rem;
+    margin-right: 4rem;
+}
+
+.navlist ul li a {
+    color: #5D3891;
+    position: relative;
+    transition: all 0.3s ;
+
+    }
+
+ .navlist ul li a:hover {
+    color: #F99417;
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.2rem;
+    background: #5D3891;
+    letter-spacing: 2px;
+    border-radius: 500px;
+    padding: 15px 45px;
+    transition: all 0.4s;
+    border: 4px solid #F99417;
+}
+
+.navlist .btn:hover {
+    opacity: 80%;
+   background: #F99417;
+   border: 4px solid #5D3891;
+   color: black;
+}
+
+.logo {
+    width: auto;
+    height: 8rem;
+}
+
+
+/* SWIPER */
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.slide-box {
+    margin: 80px;
+    display: flex;
+    flex-wrap: 1;
+    justify-content: space-between;
+    padding: auto;
+    padding-left: 5rem;
+}
+
+.slider-text {
+    flex-basis: 400px;
+    color: black;
+}
+
+.slider-text p {
+    line-height: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+    word-spacing: 5px;
+    line-height: 4rem;
+    flex-wrap: wrap;    
+}
+
+h2 {
+    font-size: 50px;
+    word-spacing: -2px;
+}
+
+.slider-img {
+    height: 450px;
+}
+
+.slider-img img {
+    max-height: 100%;
+    max-width: 100%;
+    padding-right: 5.5rem;
+    height: 100rem;
+    width: auto;
+}
+
+.categories {
+    display: flex;
+}
+
+.categories select {
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    border: 2px solid #F99417; 
+    box-sizing: border-box;
+    border-radius: 500px;
+    outline: none;
+    margin-right: 20px;
+    margin-top: 1.1rem;
+}
+
+.categories a {
+    font-size: 1.5rem;
+    justify-content: center;
+    font-weight: 600;
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-top: 1.1rem;
+}
+
+
+.categories option {
+    color: black;
+}
+
+/* Cart */
+
+.cart {
+    opacity: 80%;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 50px;
+    background: #F99417;
+    border: 4px solid #5D3891;
+    border-radius: 500px;
+    margin-right: 8.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart:hover {
+    background: #5D3891;
+    border:4px solid #F99417;
+}
+
+.cart a {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 71.6px;
+}
+
+.cart a:hover {
+    color: white;
+}
+
+.shoes-logo img {
+    position: absolute;
+    left: 70px;
+    bottom: 5px;
+    height: 35px;
+}
+
+
+/* Search Box */
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #F99417;
+    padding-right: 40px;
+    color:#F99417;
+  }
+  .input-search::placeholder{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid black;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
